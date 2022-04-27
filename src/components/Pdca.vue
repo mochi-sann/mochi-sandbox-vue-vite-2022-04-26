@@ -7,14 +7,19 @@
 <style>
 .pdca {
   font-size: 200px;
-  animation: 0.01s linear 0s infinite revolution;
+  animation: 1s linear 0s infinite revolution;
+}
+.pdca p {
+  animation: 1s linear 0s infinite text;
 }
 @-webkit-keyframes revolution {
   from {
-    transform: rotate(0turn);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: hwb(0 0% 0%);
   }
   to {
-    transform: rotate(1turn);
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    color: hwb(356 0% 0%);
   }
 }
 </style>
